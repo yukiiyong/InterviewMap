@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>px, em和rem区别 | InterviewMap</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    
+    <meta name="description" content="一些知识点汇总">
+    <link rel="preload" href="/InterviewMap/assets/css/0.styles.f8f27b20.css" as="style"><link rel="preload" href="/InterviewMap/assets/js/app.7ef33b20.js" as="script"><link rel="preload" href="/InterviewMap/assets/js/2.c7a96f3a.js" as="script"><link rel="preload" href="/InterviewMap/assets/js/9.452aed5a.js" as="script"><link rel="prefetch" href="/InterviewMap/assets/js/10.0f9db2d8.js"><link rel="prefetch" href="/InterviewMap/assets/js/11.599fcd1d.js"><link rel="prefetch" href="/InterviewMap/assets/js/12.48698b7d.js"><link rel="prefetch" href="/InterviewMap/assets/js/13.0f44793a.js"><link rel="prefetch" href="/InterviewMap/assets/js/14.f6835b44.js"><link rel="prefetch" href="/InterviewMap/assets/js/15.246434a8.js"><link rel="prefetch" href="/InterviewMap/assets/js/16.1bbb01e8.js"><link rel="prefetch" href="/InterviewMap/assets/js/17.fb33cca3.js"><link rel="prefetch" href="/InterviewMap/assets/js/18.38361e45.js"><link rel="prefetch" href="/InterviewMap/assets/js/19.ceedfd89.js"><link rel="prefetch" href="/InterviewMap/assets/js/20.49b80d6a.js"><link rel="prefetch" href="/InterviewMap/assets/js/21.f1aca8c3.js"><link rel="prefetch" href="/InterviewMap/assets/js/22.c985210e.js"><link rel="prefetch" href="/InterviewMap/assets/js/23.9ea95266.js"><link rel="prefetch" href="/InterviewMap/assets/js/24.fdfbf9f3.js"><link rel="prefetch" href="/InterviewMap/assets/js/25.5b4ed8a5.js"><link rel="prefetch" href="/InterviewMap/assets/js/26.e1c64e30.js"><link rel="prefetch" href="/InterviewMap/assets/js/27.376d4e22.js"><link rel="prefetch" href="/InterviewMap/assets/js/28.73c85acd.js"><link rel="prefetch" href="/InterviewMap/assets/js/29.00c39ca9.js"><link rel="prefetch" href="/InterviewMap/assets/js/3.77ff65da.js"><link rel="prefetch" href="/InterviewMap/assets/js/4.21e61ed5.js"><link rel="prefetch" href="/InterviewMap/assets/js/5.4c15f03b.js"><link rel="prefetch" href="/InterviewMap/assets/js/6.7533068f.js"><link rel="prefetch" href="/InterviewMap/assets/js/7.6c4ade9d.js"><link rel="prefetch" href="/InterviewMap/assets/js/8.24677f8d.js">
+    <link rel="stylesheet" href="/InterviewMap/assets/css/0.styles.f8f27b20.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/InterviewMap/" class="home-link router-link-active"><!----> <span class="site-name">InterviewMap</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>js</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>css</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/InterviewMap/css/" aria-current="page" class="active sidebar-link">px, em和rem区别</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/InterviewMap/css/#css优化" class="sidebar-link">CSS优化</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>git</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>module</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>webpack</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>js</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h4 id="px-em和rem区别"><a href="#px-em和rem区别" class="header-anchor">#</a> px, em和rem区别</h4> <p><strong>px</strong>（绝对长度单位）：在缩放页面时无法调整那些使用它作为单位的字体，按钮的大小。<br> <strong>em</strong>(相对长度单位）：继承父级元素大小<br>
+rem(相对长度单位): 相对于根元素(html)的大小，不用级联计算，支持IE9以上</p> <h4 id="line-height的理解"><a href="#line-height的理解" class="header-anchor">#</a> line-height的理解</h4> <p>① line-height是指一行字的高度，包含了字间距，实际上是下一行基线到上一行基线距离<br>
+② 若一个标签没有定义height属性，那么最终表现出来的高度由line-height决定<br>
+③ 若一个容器没有设置高度，那么撑开容器高度的是line-height而不是容器内文字内容<br>
+④ 把line-height值设置为height一样大小的值可以实现单行文体垂直居中<br>
+⑤ height和line-height都会撑开高度，height会触发has-layout，而line-height不会</p> <h4 id="line-height三种赋值方式"><a href="#line-height三种赋值方式" class="header-anchor">#</a> line-height三种赋值方式</h4> <ol><li>带单位: px是固定值，而em会参考父元素的font-size计算自身的行高</li> <li>纯数字: 会作为比例传给后代</li> <li>百分比: 将计算后的值传给后代</li></ol> <h4 id="浏览器如何确定哪些元素与css选择器匹配"><a href="#浏览器如何确定哪些元素与css选择器匹配" class="header-anchor">#</a> 浏览器如何确定哪些元素与CSS选择器匹配</h4> <p>浏览器从右边的选择器(关键选择器)开始查找，根据关键选择器，浏览器从DOM中筛选出元素，然后向上遍历被选元素的父元素。看是否匹配</p> <h4 id="基于以上规则，如何高效编写css"><a href="#基于以上规则，如何高效编写css" class="header-anchor">#</a> 基于以上规则，如何高效编写CSS</h4> <p>①避免使用标签和通用选择器(*)作为关键选择器，因为它们会匹配大量的元素，浏览器必须要进行大量的工作。去判断这些元素的父元素们是否匹配</p> <p>②选择器的匹配语句链越短，浏览器的匹配速度越快</p> <p>搞清楚哪些元素会触发回流，重绘以及合成(composition)，在编
+写样式时避免触发回流</p> <h4 id="link和＠import区别"><a href="#link和＠import区别" class="header-anchor">#</a> link和＠import区别</h4> <p>①link功能较多，可以定义Rel和定义RSS等，而@import只能用于加载CSS</p> <p>②当解析到link时，页面会同步加载所引用的CSS，而@import所引用的CSS只能等页面加载完才被加载</p> <p>③ link支持的浏览器比较多，＠import支持IE5及以上，所以可以用＠import对老浏览器隐藏样式</p> <p>④link可以js动态引入，而@import不行</p> <p>⑤ ＠import必须在样式规则之前，可以在CSS文件中引用其他文件</p> <h4 id="a标签上四个伪类的执行顺序-lvha"><a href="#a标签上四个伪类的执行顺序-lvha" class="header-anchor">#</a> a标签上四个伪类的执行顺序(LVHA)</h4> <p>link&gt;visited&gt;hover&gt;active</p> <h4 id="css属性contetnt的作用"><a href="#css属性contetnt的作用" class="header-anchor">#</a> css属性contetnt的作用</h4> <p>content属性用于before/ after伪元素上，用于插入额外内容或样式，可以减少标签使用</p> <h4 id="伪元素与伪类区别"><a href="#伪元素与伪类区别" class="header-anchor">#</a> 伪元素与伪类区别:</h4> <p><strong>伪元素</strong>:<br>
+① 在内容元素的前或后插入额外的内容或样式，但这些元素实际上并不在文档中生成<br>
+② 它们(伪元素)在外部显示可见，但不会在文档的源代码中找到它们</p> <p><strong>伪类</strong>：将特殊的效果添加到特定选择器，它是己有的选择器上添加类别的，不会产生新的元素。</p> <h4 id="before和-after-伪元素-中双冒号和单冒号的区别"><a href="#before和-after-伪元素-中双冒号和单冒号的区别" class="header-anchor">#</a> :before和:after(伪元素)中双冒号和单冒号的区别.</h4> <p>① 在CSS中伪类一直用（单冒号），用:hover表示<br>
+② 伪元素在CSS1中已存在，当时的语法用:表示，如:before<br>
+③ 在CSS3中修订，伪元素用:表示，如:before和:after，以此区分伪元素和伪类<br>
+④由于低版本IE对双冒号不兼容，开发者为了兼容各浏览器，继续使用 :after这种老语法表示伪元素</p> <hr> <h2 id="css优化"><a href="#css优化" class="header-anchor">#</a> CSS优化</h2> <h4 id="提高性能的方法"><a href="#提高性能的方法" class="header-anchor">#</a> 提高性能的方法</h4> <p>① 多个CSS合并，减少HTTP请求<br>
+② 移除空的CSS规则<br>
+③ 将CSS文件放在页面最上方<br>
+④ 避免使用CSS表达式(造成大量计算，如calc)<br>
+⑤ 选择器优化嵌套，尽量避免层级过深<br>
+⑥ 充份利用CSS继承属性，减少代码量<br>
+⑦ 抽象提取公共样式，减少代码量<br>
+⑧ 属性值为于1的小数时，省略小数点前的0<br>
+⑨ 属性值为0时不加单位<br>
+⑩ CSS雪碧图</p> <h4 id="抽离样式模块-将css拆分成两部份，公共css和业务css"><a href="#抽离样式模块-将css拆分成两部份，公共css和业务css" class="header-anchor">#</a> 抽离样式模块 (将CSS拆分成两部份，公共CSS和业务CSS)</h4> <p>① 将网站的配色，字体，交互提取为公共CSS，这部份CSS的命名不应涉及具体业务。
+② 对于业务的CSS，统一命名，使用公共的前缀。参考面向对象的CSS</p> <h4 id="响应式设计"><a href="#响应式设计" class="header-anchor">#</a> 响应式设计</h4> <p>① 响应式设计是网站可以兼容多个终端，而不是为每个终端做一个特定版本
+② 基本原理是利用CSS3媒体查询，为不同设备适配不同样式
+③ 对于低版本的IE，可以用JS获取屏幕宽度，用resize方法实现兼容
+不同的屏幕宽度添加不同的类(class)</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/InterviewMap/promise/" class="prev">
+        promise
+      </a></span> <span class="next"><a href="/InterviewMap/vue/">
+        Vue
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/InterviewMap/assets/js/app.7ef33b20.js" defer></script><script src="/InterviewMap/assets/js/2.c7a96f3a.js" defer></script><script src="/InterviewMap/assets/js/9.452aed5a.js" defer></script>
+  </body>
+</html>
